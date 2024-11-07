@@ -22,11 +22,11 @@ Ports:
   Run the following command to build and launch the containers. This will start the Django server on http://localhost:8000 and apply all migrations.
    ```bash
    docker-compose up --build
-2. 1. **Install Additional Dependencies**
+2. **Install Additional Dependencies**
 Add any required dependencies to requirements.txt, and they will be installed during the build process.
 
 # 🛠 Database Customization
-To customize the exposed Django server port, update docker-compose.yml:
+After you check the requirements.txt, customize the exposed Django server port, update docker-compose.yml:
    ```bash
    environment:
       - POSTGRES_NAME=my_custom_database
